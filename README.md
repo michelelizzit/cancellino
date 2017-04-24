@@ -48,11 +48,12 @@ The tag has an ICSP port which can be used to program the MCU (Atmega328P).
 
 | ![TAG](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag2.jpg) | ![TAG](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag3.jpg) |
 |---|---|
-
-
 | A "PCB version" tag | A "PCB version" tag |
-|---|
+
+
 | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_icsp.jpg) |
+|---|
+| An AVR programmer connected to a tag via ICSP |
 
 The MCU is configured to use its internal (8MHz) oscillator in order to minimize the number of electronic components needed for a tag.  
 
