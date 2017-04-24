@@ -45,7 +45,11 @@ The tag can be built either by using the PCB or by using a prototype board, the 
 The tag is powered by one CR2032 battery, with one battery the tag can work for about 6 months.  
 The tag has an ICSP port which can be used to program the MCU (Atmega328P).  
 
+|![TAG](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag2.jpg)|![TAG](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag3.jpg)|
+|---|---|
 
+
+|A "PCB version" tag|A "PCB version" tag|
 |![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_icsp.jpg)|
 |---|
 |An AVR programmer connected to a tag via the ICSP port|
