@@ -1,0 +1,40 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=pcbv1
+*Date=02:50:12
+*CreatedBy=Fritzing 0.9.2b.11.19.8d2d5970658f0bed09c661c9ea9a515b5f40f44c
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;10.3888;-13.7984;0;Bottom;Via2
+2;47µF;D 7343 [SMD, tantalum];19.5319;-23.952;-90;Top;C4
+3;;battcom_20mm_pth;12.3745;-18.6174;0;Bottom;BAT1
+4;;;2.48957;-3.3774;0;Bottom;Hole6
+5;;;20.2694;-18.4293;0;Bottom;Via19
+6;10k;0805 [SMD];2.72453;-21.8022;90;Top;R2
+7;;;7.44069;-16.8176;0;Bottom;Via5
+8;;tqfp;9.84702;-23.3344;-90;Top;U8
+9;;THT;10.2035;-4.38869;-90;Bottom;J1
+10;;;4.60605;-7.28148;0;Bottom;Via7
+11;;;2.48957;-28.7774;0;Bottom;Hole8
+12;;;15.801;-13.3963;0;Bottom;Via16
+13;;;22.8096;-28.7774;0;Bottom;Hole7
+14;47µF;C 6032 [SMD, tantalum];8.99646;-11.15;0;Top;C5
+15;;;4.22985;-19.1348;0;Bottom;Via15
+16;;;20.4105;-16.5478;0;Bottom;Via12
+17;;;18.9994;-3.51853;0;Bottom;Via14
+18;;;3.75938;-17.1593;0;Bottom;Via8
+19;;;1.83096;-14.7133;0;Bottom;Via18
+20;;;12.1916;-14.5599;0;Bottom;Via6
+21;;THT;21.5395;-9.63334;0;Bottom;ISP1
+22;;;22.8096;-3.3774;0;Bottom;Hole5
+23;;;20.1754;-14.7604;0;Bottom;Via17
+24;;;3.57142;-13.6315;0;Bottom;Via13
+25;;;11.0503;-16.6419;0;Bottom;Via11
