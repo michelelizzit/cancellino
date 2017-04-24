@@ -38,9 +38,19 @@ To automatically start the software at boot you can create an init file that exe
 
 ## Tag
 The tag can be built either by using the PCB or by using a prototype board, the advantage of the PCB version is its small size.  
+<div>
+<img src="https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/pcb_1.png" width="49%"/><img src="https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/pcb_2.png" width="49%"/>
+</div>
+
+
 The tag is powered by one CR2032 battery, with one battery the tag can work for about 6 months.  
 The tag has an ICSP port which can be used to program the MCU (Atmega328P).  
+
+<img src="https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_icsp.jpg" width="300px"/>
+
 The MCU is configured to use its internal (8MHz) oscillator in order to minimize the number of electronic components needed for a tag.  
+
+
 
 Every two seconds the tag broadcasts a string and then puts the nRF24L01+ in "power down" mode, in this mode the nRF24L01+ draws about 100nA.  
 The module draws 7.0mA while transmitting, but the total time the nRF24L01+ in not in power down mode is about 40ms every 2 seconds so the (theoretical) total power consumption is still very low.  
