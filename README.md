@@ -1,5 +1,14 @@
-# Cancellino - Open-source active-RFID automatic gate opening system
+# [Cancellino](https://lizzit.it/cancellino) - Open-source active-RFID automatic gate opening system
 Raspberry Pi automatic RFID gate opening system with Telegram integration
+
+
+    README.md
+  
+    Written by: Michele Lizzit <lizzit.it>, 25 Apr 2017
+    Last update: 25 Apr 2017
+    Version: 1.0
+
+More informations are available at the project website: https://lizzit.it/cancellino
 
 ## Description of the project
 Cancellino is composed of some active tags and a main unit connected to the gate lock, when the main unit detects the presence of a tag in a set range (configurable from a few cm to 10m), it opens the gate.  
