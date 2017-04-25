@@ -20,6 +20,9 @@ Each tag is composed of a battery (CR2032), an MCU (Atmega328), and an nRF24L01+
 |---|---|
 | The main unit in place | The gate |
 
+
+[![PREVIEW](/pictures/preview.jpg)](https://lizzit.it/dl/video_cancellino.html)
+
 ## Install:
 
 * connect the nRF24L01+ module to your RaspberryPI
@@ -38,9 +41,6 @@ sudo java -classpath .:classes:/opt/pi4j/lib/'*' Cancello
 ```
   
 To automatically start the software at boot you can create an init file that executes only the last command (there is no need to compile the source code each time).  
-
-
-[![PREVIEW](/pictures/preview.jpg)](https://lizzit.it/dl/video_cancellino.html)
 
 
 ## Tag
