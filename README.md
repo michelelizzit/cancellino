@@ -8,7 +8,7 @@ Raspberry Pi automatic RFID gate opening system with Telegram integration
     Last update: 25 Apr 2017
     Version: 1.0
 
-More informations are available at the project website: https://lizzit.it/cancellino  
+More informations are available on the project website: https://lizzit.it/cancellino  
 
 ## Description of the project
 Cancellino is composed of some active tags and a main unit connected to the gate lock, when the main unit detects the presence of a tag in a set range (configurable from a few cm to 10m), it opens the gate.  
@@ -16,7 +16,7 @@ Cancellino does not implemet any form of encryption, the tag broadcasts a static
 The main unit is composed of a Raspberry Pi connected to the gate lock and to an nRF24L01+ wireless module.  
 Each tag is composed of a battery (CR2032), an MCU (Atmega328), and an nRF24L01+ wireless module.  
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main3.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/overview.jpg) |
+| ![ICSP](/pictures/main3.jpg) | ![ICSP](/pictures/overview.jpg) |
 |---|---|
 | The main unit in place | The gate |
 
@@ -31,7 +31,6 @@ Each tag is composed of a battery (CR2032), an MCU (Atmega328), and an nRF24L01+
 * configure the tag by editing Config.h
 * upload the tag firmware using Arduino IDE
 
-
 ## Start:
 ```bash
 javac -classpath .:classes:/opt/pi4j/lib/'*' Cancello.java;
@@ -40,17 +39,21 @@ sudo java -classpath .:classes:/opt/pi4j/lib/'*' Cancello
   
 To automatically start the software at boot you can create an init file that executes only the last command (there is no need to compile the source code each time).  
 
+
+![![PREVIEW](/pictures/preview.jpg)](https://lizzit.it/wp-content/uploads/2017/04/video_cancellino_720p.m4v)
+
+
 ## Tag
 The tag can be built either by using the PCB or by using a prototype board, the advantage of the PCB version is its small size.  
 
-| ![PCB](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/pcb_1.png) | ![PCB](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/pcb_2.png) |
+| ![PCB](/pictures/pcb_1.png) | ![PCB](/pictures/pcb_2.png) |
 |---|---|
 
 The tag is powered by one CR2032 battery, with one battery the tag can work for about 6 months.  
 The tag has an ICSP port which can be used to program the MCU (Atmega328P).  
 
 
-| ![TAG](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag2.jpg) | ![TAG](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag3.jpg) |
+| ![TAG](/pictures/tag2.jpg) | ![TAG](/pictures/tag3.jpg) |
 |---|---|
 | A "PCB version" tag | A "PCB version" tag |
 
@@ -63,7 +66,7 @@ Every two seconds the tag broadcasts a string and then puts the nRF24L01+ in "po
 The module draws 7.0mA while transmitting, but the total time the nRF24L01+ in not in power down mode is about 40ms every 2 seconds so the (theoretical) total power consumption is still very low.  
 The actual average power consumption I measured is 50µA, which allows about 6 months of continuous operation with a single CR2032.  
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main2.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main1.jpg) |
+| ![ICSP](/pictures/main2.jpg) | ![ICSP](/pictures/main1.jpg) |
 |---|---|
 | The nRF24L01+ module on the main unit | The main unit |
 
@@ -71,16 +74,16 @@ The receiver is placed on a Raspberry Pi near the gate (I also use the Raspberry
 In a future software release I plan to implement a feature that notifies the user when the battery is low via Telegram (without requiring a hardware modification). 
 
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/telegram_screenshot.jpg) |
+| ![ICSP](/pictures/telegram_screenshot.jpg) |
 |---|
 | A prototype of the tag on a perfboard in its 3D-printed case |
 
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag1.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_icsp.jpg) |
+| ![ICSP](/pictures/tag1.jpg) | ![ICSP](/pictures/tag_icsp.jpg) |
 |---|---|
 | The tag before soldering the nRF24L01+ module | An AVR programmer connected to a tag via ICSP |
 
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_prototype.jpg) |
+| ![ICSP](/pictures/tag_prototype.jpg) |
 |---|
 | A Telegram message from Cancellino |
