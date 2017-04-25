@@ -70,10 +70,17 @@ The actual average power consumption I measured is 50µA, which allows about 6 m
 The receiver is placed on a Raspberry Pi near the gate (I also use the Raspberry Pi as a door phone), when the Raspberry Pi receives an authorized string (which presumably comes from an authorized tag) it opens the gate, plays an audio file and sends a Telegram message containing informations on the tag (who has opened the gate).  
 In a future software release I plan to implement a feature that notifies the user when the battery is low via Telegram (without requiring a hardware modification). 
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/telegram_screenshot.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_prototype.jpg) |
-|---|---|
-| A prototype of the tag on a perfboard in its 3D-printed case | A Telegram message from Cancellino |
+
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/telegram_screenshot.jpg) |
+|---|
+| A prototype of the tag on a perfboard in its 3D-printed case |
+
 
 | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag1.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_icsp.jpg) |
 |---|---|
 | The tag before soldering the nRF24L01+ module | An AVR programmer connected to a tag via ICSP |
+
+
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_prototype.jpg) |
+|---|
+| A Telegram message from Cancellino |
