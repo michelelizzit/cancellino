@@ -78,3 +78,6 @@ In a future software release I plan to implement a feature that notifies the use
 |---|---|
 | The tag before soldering the nRF24L01+ module | An AVR programmer connected to a tag via ICSP |
 
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_prototype.jpg) |
+|---|
+| A prototype of the tag on a perfboard in its 3D-printed case | 
