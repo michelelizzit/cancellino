@@ -40,7 +40,7 @@ sudo java -classpath .:classes:/opt/pi4j/lib/'*' Cancello
 To automatically start the software at boot you can create an init file that executes only the last command (there is no need to compile the source code each time).  
 
 
-[![PREVIEW](/pictures/preview.jpg)](https://lizzit.it/wp-content/uploads/2017/04/video_cancellino_720p.m4v)
+[![PREVIEW](/pictures/preview.jpg)](https://lizzit.it/dl/video_cancellino.html)
 
 
 ## Tag
