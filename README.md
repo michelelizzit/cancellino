@@ -16,6 +16,10 @@ Cancellino does not implemet any form of encryption, the tag broadcasts a static
 The main unit is composed of a Raspberry Pi connected to the gate lock and to an nRF24L01+ wireless module.  
 Each tag is composed of a battery (CR2032), an MCU (Atmega328), and an nRF24L01+ wireless module.  
 
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main3.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/overview.jpg) |
+|---|---|
+| The main unit in place | The gate |
+
 ## Install:
 
 * connect the nRF24L01+ module to your RaspberryPI
@@ -51,10 +55,6 @@ The tag has an ICSP port which can be used to program the MCU (Atmega328P).
 | A "PCB version" tag | A "PCB version" tag |
 
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_icsp.jpg) |
-|---|
-| An AVR programmer connected to a tag via ICSP |
-
 The MCU is configured to use its internal (8MHz) oscillator in order to minimize the number of electronic components needed for a tag.  
 
 
@@ -63,6 +63,18 @@ Every two seconds the tag broadcasts a string and then puts the nRF24L01+ in "po
 The module draws 7.0mA while transmitting, but the total time the nRF24L01+ in not in power down mode is about 40ms every 2 seconds so the (theoretical) total power consumption is still very low.  
 The actual average power consumption I measured is 50µA, which allows about 6 months of continuous operation with a single CR2032.  
 
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main1.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main2.jpg) |
+|---|---|
+| The nRF24L01+ module on the main unit | The main unit |
+
 The receiver is placed on a Raspberry Pi near the gate (I also use the Raspberry Pi as a door phone), when the Raspberry Pi receives an authorized string (which presumably comes from an authorized tag) it opens the gate, plays an audio file and sends a Telegram message containing informations on the tag (who has opened the gate).  
-In a future software release I plan to implement a feature that notifies the user when the battery is low via Telegram (without requiring a hardware modification).  
+In a future software release I plan to implement a feature that notifies the user when the battery is low via Telegram (without requiring a hardware modification). 
+
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/telegram_screenshot.jpg) |
+|---|
+| A Telegram message from Cancellino | 
+
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag1.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/tag_icsp.jpg) |
+|---|---|
+| The tag before soldering the nRF24L01+ module | An AVR programmer connected to a tag via ICSP |
 
