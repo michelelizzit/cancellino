@@ -63,7 +63,7 @@ Every two seconds the tag broadcasts a string and then puts the nRF24L01+ in "po
 The module draws 7.0mA while transmitting, but the total time the nRF24L01+ in not in power down mode is about 40ms every 2 seconds so the (theoretical) total power consumption is still very low.  
 The actual average power consumption I measured is 50µA, which allows about 6 months of continuous operation with a single CR2032.  
 
-| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main1.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main2.jpg) |
+| ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main2.jpg) | ![ICSP](https://raw.githubusercontent.com/michelelizzit/cancellino/master/pictures/main1.jpg) |
 |---|---|
 | The nRF24L01+ module on the main unit | The main unit |
 
